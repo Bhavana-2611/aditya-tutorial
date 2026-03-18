@@ -1,0 +1,217 @@
+/* GLOBAL */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth; /* smooth scrolling 🔥 */
+}
+
+/* HEADER */
+header {
+    background-color: #0b2c5f;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 70px;
+    height: 70px;
+}
+
+.title {
+    text-align: center; /* FIXED */
+}
+
+header h2 {
+    margin-bottom: 5px;
+}
+
+header h1 {
+    margin: 10px 0;
+    font-size: 32px;
+}
+
+/* NAVBAR */
+nav {
+    margin-top: 15px;
+}
+
+nav button {
+    background-color: white;
+    color: #0b2c5f;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+nav button:hover {
+    background-color: #ff4d4d;
+    color: white;
+    transition: 0.3s;
+}
+
+/* HERO (DARK BLUE) */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(to right, #0b2c5f, #1e4fa1);
+    color: white;
+}
+
+.hero h1 {
+    color: yellow;
+    font-size: 36px;
+}
+
+.hero h2 {
+    font-size: 28px;
+}
+
+.hero p {
+    font-size: 16px;
+    margin: 8px 0;
+}
+
+.hero .highlight {
+    color: #ff4d4d;
+    font-weight: bold;
+}
+
+.hero .bold {
+    color: yellow;
+    font-weight: bold;
+}
+
+/* ABOUT (LIGHT BLUE) */
+.about {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #e6f0ff;
+}
+
+.about h2 {
+    color: #0b2c5f;
+    font-size: 28px;
+}
+
+.about p {
+    max-width: 800px;
+    margin: 10px auto;
+    line-height: 1.6;
+}
+
+/* COURSES (DARK BLUE) */
+.courses {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #0b2c5f;
+    color: white;
+}
+
+.course-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.course-box {
+    background-color: white;
+    color: black; /* FIXED visibility */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 15px;
+    width: 220px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.course-box h3 {
+    color: #0b2c5f;
+}
+
+.course-box:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+/* ACHIEVEMENTS (LIGHT BLUE) */
+.achievements {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #e6f0ff;
+}
+
+.cert-note {
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #0b2c5f;
+}
+
+.achievement-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.achievement-box {
+    text-align: center;
+}
+
+/* CERTIFICATE IMAGE */
+.cert-img {
+    width: 200px;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.cert-img:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+/* CONTACT (DARK BLUE) */
+.contact {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #0b2c5f;
+    color: white;
+}
+
+.contact h2 {
+    color: yellow;
+}
+
+/* WHATSAPP BUTTON */
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.whatsapp:hover {
+    background-color: #1ebc59;
+}
+.cert-title {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #0b2c5f;
+    text-align: center;
+}
