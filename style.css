@@ -2,65 +2,63 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    scroll-behavior: smooth; /* smooth scrolling 🔥 */
+    scroll-behavior: smooth;
 }
 
 /* HEADER */
 header {
-    background-color: #0b2c5f;
-    color: white;
-    text-align: center;
+    background-color: #e6f0ff;
+    color: #0b2c5f;
     padding: 20px;
 }
 
+/* HEADER ALIGNMENT */
 .header-container {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    position: relative;
+}
+
+.header-left {
+    text-align: center;
+}
+
+.header-right {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* LOGO FIX */
+.logo {
+    width: 160px;
+    height: 160px;
+    object-fit: contain;
+    border-radius: 50%;
+    background: white;
+    padding: 10px;
+    border: 3px solid #0b2c5f;
+}
+
+/* NAV */
+nav {
+    margin-top: 10px;
+    display: flex;
     justify-content: center;
 }
 
-.logo {
-    width: 70px;
-    height: 70px;
-}
-
-.title {
-    text-align: center; /* FIXED */
-}
-
-header h2 {
-    margin-bottom: 5px;
-}
-
-header h1 {
-    margin: 10px 0;
-    font-size: 32px;
-}
-
-/* NAVBAR */
-nav {
-    margin-top: 15px;
-}
-
 nav button {
-    background-color: white;
-    color: #0b2c5f;
+    background-color: #0b2c5f;
+    color: white;
     border: none;
-    padding: 10px 20px;
+    padding: 10px 18px;
     margin: 5px;
-    font-weight: bold;
-    cursor: pointer;
     border-radius: 5px;
 }
 
-nav button:hover {
-    background-color: #ff4d4d;
-    color: white;
-    transition: 0.3s;
-}
-
-/* HERO (DARK BLUE) */
+/* HERO (DARK) */
 .hero {
     text-align: center;
     padding: 50px 20px;
@@ -68,28 +66,22 @@ nav button:hover {
     color: white;
 }
 
-.hero h1 {
-    color: yellow;
-    font-size: 36px;
+/* VIDEOS (WHITE + CENTER FIX) */
+.videos {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: white;
 }
 
-.hero h2 {
-    font-size: 28px;
+.video-container {
+    display: flex;
+    flex-direction: column;   /* 🔥 THIS FIXES YOUR ISSUE */
+    align-items: center;
+    gap: 20px;
 }
 
-.hero p {
-    font-size: 16px;
-    margin: 8px 0;
-}
-
-.hero .highlight {
-    color: #ff4d4d;
-    font-weight: bold;
-}
-
-.hero .bold {
-    color: yellow;
-    font-weight: bold;
+.video-container video {
+    width: 300px;
 }
 
 /* ABOUT (LIGHT BLUE) */
@@ -99,25 +91,51 @@ nav button:hover {
     background-color: #e6f0ff;
 }
 
-.about h2 {
-    color: #0b2c5f;
-    font-size: 28px;
+/* CHAIRMAN (DARK BLUE FOR VARIATION) */
+.chairman {
+    padding: 50px 20px;
+    background-color: #0b2c5f;
+    color: white;
 }
 
-.about p {
-    max-width: 800px;
-    margin: 10px auto;
-    line-height: 1.6;
+.chairman-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
 }
 
-/* COURSES (DARK BLUE) */
+/* TEXT */
+.chairman-text {
+    max-width: 600px;
+    text-align: justify; /* 🔥 PROFESSIONAL */
+}
+
+.chairman-text h2 {
+    text-align: center;
+    color: yellow;
+}
+
+/* IMAGE BIGGER */
+.chairman-image img {
+    width: 300px;   /* 🔥 BIGGER */
+    border-radius: 10px;
+}
+
+.chairman-name {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* COURSES (DARK) */
 .courses {
     text-align: center;
     padding: 50px 20px;
     background-color: #0b2c5f;
     color: white;
 }
-
 .course-container {
     display: flex;
     flex-wrap: wrap;
@@ -126,7 +144,7 @@ nav button:hover {
 
 .course-box {
     background-color: white;
-    color: black; /* FIXED visibility */
+    color: black;
     border-radius: 10px;
     padding: 20px;
     margin: 15px;
@@ -138,61 +156,73 @@ nav button:hover {
     color: #0b2c5f;
 }
 
-.course-box:hover {
-    transform: scale(1.05);
-    transition: 0.3s;
-}
-
-/* ACHIEVEMENTS (LIGHT BLUE) */
+/* ACHIEVEMENTS (LIGHT) */
 .achievements {
     text-align: center;
     padding: 50px 20px;
     background-color: #e6f0ff;
 }
 
-.cert-note {
-    font-weight: bold;
-    margin-bottom: 20px;
-    color: #0b2c5f;
-}
-
 .achievement-container {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
+    flex-wrap: nowrap;
 }
 
-.achievement-box {
-    text-align: center;
-}
-
-/* CERTIFICATE IMAGE */
-.cert-img {
-    width: 200px;
-    height: 260px;
+.achievement-img {
+    width: 140px;
+    height: 180px;
     object-fit: cover;
-    border-radius: 5px;
 }
 
-.cert-img:hover {
-    transform: scale(1.05);
-    transition: 0.3s;
-}
-
-/* CONTACT (DARK BLUE) */
-.contact {
+/* APPROVALS (DARK) */
+.approvals {
     text-align: center;
     padding: 50px 20px;
     background-color: #0b2c5f;
     color: white;
 }
 
-.contact h2 {
-    color: yellow;
+.approval-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
 }
 
-/* WHATSAPP BUTTON */
+/* FIX EMPTY SPACE ISSUE */
+.approval-box {
+    background: white;
+    color: black;
+    padding: 15px;
+    border-radius: 10px;
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   /* 🔥 CENTER IMAGE */
+    align-items: center;
+}
+
+/* IMAGE CENTER */
+.approval-box img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/* CONTACT (LIGHT BLUE FIX) */
+.contact {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #e6f0ff;  /* 🔥 FIXED */
+    color: black;
+}
+
+.contact h2 {
+    color: #0b2c5f;
+}
+
+/* WHATSAPP */
 .whatsapp {
     position: fixed;
     bottom: 20px;
@@ -201,17 +231,4 @@ nav button:hover {
     color: white;
     padding: 12px 18px;
     border-radius: 30px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.whatsapp:hover {
-    background-color: #1ebc59;
-}
-.cert-title {
-    margin-top: 20px;
-    font-weight: bold;
-    font-size: 18px;
-    color: #0b2c5f;
-    text-align: center;
 }
