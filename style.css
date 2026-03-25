@@ -232,3 +232,30 @@ nav button {
     padding: 12px 18px;
     border-radius: 30px;
 }
+/* WhatsApp Button Styling */
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+    background-color: #25D366;
+    color: white;
+
+    padding: 12px 20px;
+    font-size: 18px;
+
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+
+    animation: pulse 1.5s infinite;
+}
+
+/* Smooth Pulse Effect (Better than blink) */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.08); }
+    100% { transform: scale(1); }
+}
